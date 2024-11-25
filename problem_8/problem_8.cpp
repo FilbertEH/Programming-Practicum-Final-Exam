@@ -17,8 +17,7 @@ int main() {
 
     std::string line;
     int num;
-    int i = 1;
-    
+    int index = 1;
     while (std::getline(testFile, line)) {
         std::getline(testFile, line);
         std::stringstream ss1(line);
@@ -64,9 +63,9 @@ int main() {
         }
         
         if (merged == expected) {
-            std::cout << "Test Case " << i << " Passed\n";
+            std::cout << "Test Case " << index << " Passed\n";
         } else {
-            std::cout << "Test Case " << i << " Failed\n";
+            std::cout << "Test Case " << index << " Failed\n";
         }
         std::cout << "  Input:\n    ";
         for (int num : list1) {
@@ -89,7 +88,7 @@ int main() {
             std::cout << num << " ";
         }
         std::cout << "\n\n";
-        i++;
+        index++;
     }
     testFile.close();
     return 0;
