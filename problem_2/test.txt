@@ -1,0 +1,6 @@
+Input: boat
+Output: no
+Input: madam
+Output: yes
+Input: racecar
+Output: yes
